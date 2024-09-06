@@ -1,0 +1,15 @@
+ls
+mkdir
+cd
+cd ..
+rmdir to delete folder
+rm to delete file
+echo "text" >> file.extension
+pwd
+
+
+git init
+git status
+git add .
+git commit -m "something"
+git branch -M main
