@@ -12,4 +12,11 @@ git init
 git status
 git add .
 git commit -m "something"
+git log
 git branch -M main
+git checkout -b branchname (to creat new branch)
+git checkout branchname (to switch to diff branch)
+git remote add origin link
+git push -u origin
+git pull
+git clone
