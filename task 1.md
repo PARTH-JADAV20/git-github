@@ -5,13 +5,13 @@
 git config --global user.name "Your Name" 
 git config --global user.email "your-email@example.com" 
 ```
-➤ this cmds are only used first time to setup connection between local and github.
+➤ This cmds are used to configure to all repository for current user (globally).
 
 ### **2. View your Git configuration:** ###
 ```bash
 git config --list
 ```
-➤ this will give configuartion of our git.
+➤ This cmd will give list of configuartion of our git.
 
 ## Task 2: Initialize a Repository ##
 ### **1. Create a new project folder and navigate to it:** ###
@@ -19,13 +19,13 @@ git config --list
 mkdir MyProject
 cd MyProject
 ```
-➤ mkdir will make directory(folder) and cd will change directory to myproject.
+➤ mkdir will make directory(folder) and cd will change working directory to myproject.
 
 ### **2. Initialize it as a Git repository:** ###
 ```bash
 git init
 ```
-➤ this cmd will initialize git in that directory then you can use git cmds.
+➤ This cmd will initialize git in that directory then you can use git cmds.
 
 ## Task 3: Create a File and Make Multiple Commits ##
 
@@ -33,39 +33,39 @@ git init
 ```bash
 echo "My First Project" > README.md
 ```
-➤ this cmd will create new file README.md with text written in " ".
+➤ This cmd will create new file README.md with text written in " ".
 
 ### **2. Stage the file:** ###
 ```bash
 git add README.md
 ```
-➤ this cmd will add README to stagging part.
+➤ This cmd will add README to stagging part.
 
 ### **3. Commit the file:** ###
 ```bash
 git commit -m "Initial commit: Added README.md"
 ```
-➤ this cmd will commit added file with message in " ".
+➤ This cmd will commit added file with message in " ".
 
 ### **4. Make changes to the file:** ###
 ```bash
 echo "Added a description" >> README.md
 ```
-➤ this cmd will append text of " " in README.md.
+➤ This cmd will append text of " " in README.md.
 
 ### **5. Stage and commit the changes:** ###
 ```bash
 git add README.md
 git commit -m "Updated README with a description"
 ```
-➤ this cmd will add modified file to stagging area and commit with message in " ".
+➤ This cmd will add modified file to stagging area and commit with message in " ".
 
 ## Task 4: Check Status and Log ##
 ### **1. Check the repository’s current status:** ###
 ```bash
 git status
 ```
-➤ this cmd will give status of git which files are modified and which file are in stagging area.
+➤ This cmd will give status of git which files are modified and which file are in stagging area.
 
 ### **2. View commit history in detail:** ###
 ```bash
@@ -85,7 +85,7 @@ git log --oneline --graph --decorate
 ```bash
 git clone http://codinggita.com/example-repo
 ```
-➤ this will clone any repo in your local.
+➤ This will clone any repo in your local.
 
 ## Task 6: Understanding the Git Workflow ##
 ### **Example Workflow:** ###
@@ -93,7 +93,7 @@ git clone http://codinggita.com/example-repo
 ```bash
 echo "Workflow example" > workflow.md
 ```
-➤ this cmd will create new workflow.md file with text written in " ".
+➤ This cmd will create new workflow.md file with text written in " ".
 
 ### **ii. Stage the file:** ###
 ```bash
@@ -211,7 +211,7 @@ git stash list
 ```bash
 git stash apply
 ```
-➤ this cmd apply stash changes.
+➤ This cmd apply stash.
 
 ### **5. Drop the stash after applying** ###
 ```bash
@@ -226,13 +226,13 @@ echo "Commit 1" > file1.txt && git add file1.txt && git commit -m "Commit 1"
 echo "Commit 2" > file2.txt && git add file2.txt && git commit -m "Commit 2"
 echo "Commit 3" > file3.txt && git add file3.txt && git commit -m "Commit 3"
 ```
-➤ .
+➤ The above cmds will create multiple files add and commits.
 
 ### **2. Squash commits into one:** ###
 ```bash
 git rebase -i HEAD~3
 ```
-➤ .
+➤ with rebase we can rewrite Git history -i is for interactive and Head~3 is last three commits.
 Example: Replace `pick` with `squash` for the second and third commits.
 
 ## Task 12: Cherry-Picking Commits ##
@@ -240,40 +240,39 @@ Example: Replace `pick` with `squash` for the second and third commits.
 ```bash
 git checkout -b cherry-pick-example
 ```
-➤ .
+➤ This cmd will create new branch cherry-pick-example and will switch to it.
 
 ### **2. Cherry-pick a specific commit from another branch:** ###
 ```bash
 git cherry-pick <commit-hash>
 ```
-➤ .
-
+➤ This cmd help to pick a commit and apply on current branch.
 ## Task 13: Tagging Commits ##
 ### **1. Tag the current commit:** ###
 ```bash
 git tag -a v1.0 -m "Version 1.0 release"
 ```
-➤ .
+➤ This cmd will tag commit with name as v1.0 and with message in " ".
 
 ### **2. Push the tag to the remote repository:** ###
 ```bash
 git push origin v1.0
 ```
-➤ .
+➤ This will push tagged commit to remote repository.
 Example: Replace `pick` with `squash` for the second and third commits.
 
-## Task 14: Cherry-Picking Commits ##
+## Task 14: Working with Remote Repositories ##
 ### **1. Add a remote repository:** ###
 ```bash
 git remote add origin <repository-url>
 ```
-➤ .
+➤ This cmd will link local git to specific repository.
 
 ### **2. Push your changes to the remote repository:** ###
 ```bash
 git push origin main
 ```
-➤ .
+➤ This cmd will push the local files to main branch in created repo.
 
 ## Task 15: Forking and Contributing ##
 ### **1. Fork a repository on GitHub.** ###
@@ -281,7 +280,7 @@ git push origin main
 ```bash
 git clone <forked-repo-url>
 ```
-➤ .
+➤ This cmd will clone forked repo to local.
 
 ### **3. Create a new branch, make changes, and push:** ###
 ```bash
@@ -291,7 +290,7 @@ git add README.md
 git commit -m "Fixed a typo"
 git push origin fix-typo
 ```
-➤ .
+➤ This cmd will create new branch, make changes to README file, add and commit the changes and then push to created branch.
 ### **4. Open a pull request on GitHub.** ###
 
 ---
@@ -308,10 +307,10 @@ git push origin fix-typo
 ```bash
 echo "node_modules/" > .gitignore
 ```
-➤ .
+➤ Its define rules for directory that should not be tracked, commited, or pushed
 
 ### **2. Add files and ensure ignored files are not staged:** ###
 ```bash
 git add .
 ```
-➤ .
+➤ This will add file expect files in node_modules/.
