@@ -12,7 +12,6 @@
    ```bash
    git config --list
    ```
-   ➤ This cmd will give list of configuration of our git.   
 
 #### **Task 2: Initialize a Repository**
 1. Create a directory and initialize it as a Git repository:  
@@ -37,7 +36,6 @@
    git add file1.txt
    git commit -m "Initial commit: Added file1.txt"
    ```
-   ➤ This cmd will add file1.txt to staging area and commit it with message in " ".
 
 #### **Task 4: Viewing Changes**
 1. Modify the file:  
@@ -51,14 +49,12 @@
    git status
    git diff
    ```
-   ➤  Shows status of files Untracked, Modified, Staged & Deleted And diff shows line-by-line difference in file.
 
 #### **Task 5: Undoing Changes**
 1. Unstage a staged file:  
    ```bash
    git reset file1.txt
    ```
-   ➤ This cmd will undo changes of staging area before committing it.
 2. Discard uncommitted changes:  
    ```bash
    git checkout -- file1.txt
@@ -93,7 +89,6 @@
    git checkout main
    git merge feature-enhanced
    ```
-   ➤ This cmd will merge feature-enhanced to main branch. 
 
 #### **Task 8: Handling Merge Conflicts**
 1. Create two conflicting branches and resolve a conflict manually:  
@@ -152,7 +147,6 @@
    ```bash
    git stash
    ```
-   ➤ This cmd will create stash of files not yet committed.
 2. Apply stashed changes:  
    ```bash
    git stash apply
@@ -227,7 +221,6 @@
    git add .gitignore
    git commit -m "Added .gitignore"
    ```
-   ➤ Its define rules for directory that should not be tracked, committed, or pushed, git add will add .gitignore to staging area & then commit for added file.
 2. Verify that ignored files are not staged:  
    ```bash
    git status

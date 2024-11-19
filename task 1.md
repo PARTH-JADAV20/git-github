@@ -11,7 +11,7 @@ git config --global user.email "your-email@example.com"
 ```bash
 git config --list
 ```
-➤ This cmd will give list of configuration of our git.
+➤ this will give configuartion of our git.
 
 ## Task 2: Initialize a Repository ##
 ### **1. Create a new project folder and navigate to it:** ###
@@ -39,7 +39,7 @@ echo "My First Project" > README.md
 ```bash
 git add README.md
 ```
-➤ This cmd will add README to staging part.
+➤ this cmd will add README to stagging part.
 
 ### **3. Commit the file:** ###
 ```bash
@@ -58,7 +58,7 @@ echo "Added a description" >> README.md
 git add README.md
 git commit -m "Updated README with a description"
 ```
-➤ This cmd will add modified file to staging area and commit with message in " ".
+➤ this cmd will add modified file to stagging area and commit with message in " ".
 
 ## Task 4: Check Status and Log ##
 ### **1. Check the repository’s current status:** ###
@@ -307,7 +307,7 @@ git push origin fix-typo
 ```bash
 echo "node_modules/" > .gitignore
 ```
-➤ Its define rules for directory that should not be tracked, committed, or pushed
+➤ .
 
 ### **2. Add files and ensure ignored files are not staged:** ###
 ```bash
